@@ -1,0 +1,47 @@
+<html> 
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+
+        <!--Los formularios se definen utilizando la etiqueta <form>
+            , con campos de entrada definidos por la etiqueta <input>, etiquetas de texto por la etiqueta <label>
+            , y botones por la etiqueta <button>.-->
+
+        <!--action deberia apuntar a la URL donde se procesará el formulario, pero como no hay un servidor de backend, se deja vacío-->        
+        <form action="" method="post">
+            <!-- formulario de respuesta abierta -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="con">Contraseña:</label>
+            <input type="password"><br><br>
+
+            <!-- label es para semántica, input es para entrada de datos corta -->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <!-- textarea para el mensaje de parrafo largo -->
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+            
+            <label for="genero">Género:</label><br>
+            <p>Seleciciona tu sexo: </p>
+            <input type="radio" name="respuesta"/>Hombre
+            <input type="radio" name=" respuesta" >Mujer
+            <br/>
+             
+            <p>Selecciona tus intereses:</p>
+            <input type="checkbox" name="intereses" value="deportes"/>Deportes
+            <input type="checkbox" name="intereses" value="musica"/>Música
+            <input type="checkbox" name="intereses" value="tecnologia"/>Tecnología
+            <br/><br/>  
+
+            <input type="submit" value= "Enviar">
+        </form>
+
+        <!--#Representacion visual de lenguaje de codigo en HTML-->
+        <p>Los formularios se definen utilizando la etiqueta <code>&lt;form&gt;</code>, con campos de entrada definidos por la etiqueta <code>&lt;input&gt;</code>, etiquetas de texto por la etiqueta <code>&lt;label&gt;</code>, y botones por la etiqueta <code>&lt;button&gt;</code>.</p>
+
+    </body>
+</html>
